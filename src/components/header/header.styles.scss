@@ -1,0 +1,18 @@
+@import "../../sass/main";
+
+.navbar {
+  padding: 3rem 0;
+}
+
+.herobox {
+  margin-top: 3rem;
+  background-size: cover;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  border-radius: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

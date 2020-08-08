@@ -1,0 +1,37 @@
+.main-heading {
+  font-size: 1.8rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: $normal;
+  color: $blue;
+}
+
+.company-name {
+  font-size: 1.3rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: $bold;
+  color: $blue;
+}
+
+.info {
+  color: $gray;
+  font-size: 1.2rem;
+  font-family: "Roboto", sans-serif;
+}
+
+.filter-label {
+  color: $blue;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.5rem;
+  font-weight: $bold;
+}
+
+.logo {
+  color: $black;
+  font-size: 2.4rem;
+  font-weight: bold;
+  font-family: "Poppins", sans-serif;
+  span {
+    font-size: 2.4rem;
+    font-weight: $normal;
+  }
+}
