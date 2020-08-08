@@ -2,7 +2,6 @@
 
 .details__small {
   flex: 0 0 20%;
-  min-height: 90vh;
 }
 
 .apply {
@@ -18,15 +17,17 @@
 .how-to-apply {
   font-size: 1.4rem;
   color: $gray;
-
   text-transform: uppercase;
   font-weight: $bold;
   font-family: "Poppins", sans-serif;
   margin: 4rem 0;
+  @media only screen and(max-width:980px) {
+    margin: 2rem 0;
+  }
 }
 
 .apply-process {
-  text-align: left;
+  width: 90%;
   p {
     font-size: 1.4rem;
     font-family: "Poppins", sans-serif;

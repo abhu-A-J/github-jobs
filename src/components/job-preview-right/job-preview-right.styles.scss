@@ -5,15 +5,26 @@
   flex: 0 0 80%;
   min-height: 90vh;
   padding-left: 10rem;
+  @media only screen and(max-width:980px) {
+    padding-left: 0;
+  }
 }
 
 .main-heading {
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  @media only screen and(max-width:500px) {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 3rem;
+  }
 
   .tag {
     margin-left: 2rem;
+    @media only screen and(max-width:980px) {
+      margin-left: 0;
+    }
   }
 }
 
@@ -52,5 +63,10 @@
     color: $blue;
     font-size: 1.4rem;
     margin: 1rem 0;
+  }
+  ul {
+    @media only screen and(max-width:600px) {
+      margin-left: 2rem;
+    }
   }
 }
