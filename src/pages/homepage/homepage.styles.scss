@@ -8,12 +8,40 @@
 }
 
 .filter__box {
-  flex: 0 0 40%;
-  min-height: 100vh;
-  background: yellowgreen;
+  flex: 0 0 30%;
 }
 
+.input__group {
+  width: 90%;
+  margin: 1rem auto;
+  &--top {
+    margin-top: 4rem;
+  }
+
+  &:first-child {
+    margin: 3rem auto;
+  }
+
+  label {
+    margin-left: 1rem;
+    color: $blue;
+    font-size: 1.4rem;
+    font-weight: $normal;
+    font-family: "Poppins", sans-serif;
+  }
+}
+
+.location-tag {
+  color: $gray;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  font-weight: $bold;
+  text-align: left;
+  font-family: "Poppins", sans-serif;
+  margin: 2rem 0;
+  margin-left: 5%;
+}
 .filtered__result {
-  flex: 0 0 60%;
+  flex: 0 0 70%;
   background: rgab(pink, 0.5);
 }

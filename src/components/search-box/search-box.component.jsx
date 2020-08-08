@@ -2,19 +2,18 @@ import React from "react";
 
 import "./search-box.styles.scss";
 
-import briefcase from "../../asset/iconmonstr-briefcase-6.svg";
+import globe from "../../asset/iconmonstr-globe-6.svg";
 
 const SearchBox = () => {
   return (
-    <div className="input__container">
+    <div className="input__container--filter">
       <input
         type="text"
         id="search"
-        placeholder="Title, companies, expertise or benefits "
+        placeholder="City, state, zip code or country"
         autoComplete="off"
       />
-      <img src={briefcase} alt="Briefcase" />
-      <button class="submit">Search</button>
+      <img src={globe} alt="Globe" />
     </div>
   );
 };

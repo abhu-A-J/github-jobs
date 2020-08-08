@@ -3,8 +3,7 @@ import React from "react";
 import "./header.styles.scss";
 
 import background from "../../asset/backgroundImg.png";
-
-import SearchBox from "../../components/search-box/search-box.component";
+import briefcase from "../../asset/iconmonstr-briefcase-6.svg";
 
 const Header = () => {
   return (
@@ -15,7 +14,16 @@ const Header = () => {
           backgroundImage: `url(${background})`,
         }}
       >
-        <SearchBox />
+        <div className="input__container">
+          <input
+            type="text"
+            id="search"
+            placeholder="Title, companies, expertise or benefits "
+            autoComplete="off"
+          />
+          <img src={briefcase} alt="Briefcase" />
+          <button className="submit">Search</button>
+        </div>
       </div>
     </header>
   );
