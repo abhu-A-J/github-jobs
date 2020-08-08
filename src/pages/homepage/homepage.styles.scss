@@ -1,18 +1,19 @@
 @import "../../sass/main";
 
-.navbar {
-  padding: 3rem 0;
+.main__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-top: 5rem;
 }
 
-.herobox {
-  margin-top: 3rem;
-  background-size: cover;
-  width: 100%;
-  background-repeat: no-repeat;
-  background-position: center;
+.filter__box {
+  flex: 0 0 40%;
+  min-height: 100vh;
+  background: yellowgreen;
+}
 
-  border-radius: 2rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.filtered__result {
+  flex: 0 0 60%;
+  background: rgab(pink, 0.5);
 }

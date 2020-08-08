@@ -1,0 +1,45 @@
+@import "../../sass/main";
+
+.preview__card {
+  display: flex;
+  padding: 1rem;
+  justify-content: space-between;
+  align-items: flex-start;
+  background: $white;
+  width: 90%;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05);
+  border-radius: 4px;
+  margin: 2rem auto;
+}
+
+.left-group {
+  display: flex;
+}
+
+.right-group {
+  align-self: flex-end;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-end;
+  p {
+    display: flex;
+    align-self: flex-end;
+    margin: 0 1rem;
+    img {
+      width: 1.5rem;
+      height: 1.5rem;
+      margin-right: 1rem;
+    }
+  }
+}
+
+.company-logo {
+  width: 9rem;
+  height: 9rem;
+  margin-right: 3rem;
+  border-radius: 4px;
+  img {
+    max-width: 100%;
+    border-radius: 4px;
+  }
+}
