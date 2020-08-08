@@ -1,0 +1,39 @@
+@import "../../sass/main";
+
+.details__small {
+  flex: 0 0 20%;
+  min-height: 90vh;
+}
+
+.apply {
+  font-size: 2rem;
+  color: $light-blue;
+  a {
+    color: $light-blue;
+    font-size: 1.4rem;
+    font-family: "Poppins", sans-serif;
+  }
+}
+
+.how-to-apply {
+  font-size: 1.4rem;
+  color: $gray;
+
+  text-transform: uppercase;
+  font-weight: $bold;
+  font-family: "Poppins", sans-serif;
+  margin: 4rem 0;
+}
+
+.apply-process {
+  text-align: left;
+  p {
+    font-size: 1.4rem;
+    font-family: "Poppins", sans-serif;
+    color: $blue;
+  }
+  a {
+    color: $light-blue;
+    text-decoration: none;
+  }
+}
