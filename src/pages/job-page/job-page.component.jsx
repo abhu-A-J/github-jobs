@@ -32,11 +32,14 @@ const JobsPage = ({ match }) => {
 
   return (
     <>
-      {fetchingDetails && <Loader />}
-      <div className="details__group u-container">
-        <JobPreviewLeft applyDetail={job.how_to_apply} />
-        <JobPreviewRight {...job} />
-      </div>
+      {fetchingDetails ? (
+        <Loader />
+      ) : (
+        <div className="details__group u-container">
+          <JobPreviewLeft applyDetail={job.how_to_apply} />
+          <JobPreviewRight {...job} />
+        </div>
+      )}
     </>
   );
 };

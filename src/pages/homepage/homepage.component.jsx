@@ -23,6 +23,23 @@ const HomePage = () => {
   console.log("The state are", { isFetching, jobs, error });
   console.log("Params are", params);
 
+  const handleCheckBox = (event) => {
+    const { checked } = event.target;
+    checked === true
+      ? setParams((prevParams) => {
+          return {
+            ...prevParams,
+            full_time: true,
+          };
+        })
+      : setParams((prevParams) => {
+          return {
+            ...prevParams,
+            full_time: undefined,
+          };
+        });
+  };
+
   return (
     <>
       <Header setParams={setParams} />
@@ -30,38 +47,17 @@ const HomePage = () => {
       <div className="main__content u-container">
         <div className="filter__box">
           <div className="input__group">
-            <input type="checkbox" id="fulltime" />
+            <input
+              type="checkbox"
+              id="fulltime"
+              onChange={(e) => handleCheckBox(e)}
+            />
             <label htmlFor="fulltime">Full Time</label>
           </div>
 
           <p className="location-tag">Location</p>
 
           <LocationSearchBox setParams={setParams} />
-
-          <div className="input__group input__group--top">
-            <input type="checkbox" id="london" />
-            <label htmlFor="london">London</label>
-          </div>
-
-          <div className="input__group">
-            <input type="checkbox" id="amsterdam" />
-            <label htmlFor="amsterdam">Amsterdam</label>
-          </div>
-
-          <div className="input__group">
-            <input type="checkbox" id="newyork" />
-            <label htmlFor="newyork">New York</label>
-          </div>
-
-          <div className="input__group">
-            <input type="checkbox" id="berlin" />
-            <label htmlFor="berlin">Berlin</label>
-          </div>
-
-          <div className="input__group">
-            <input type="checkbox" id="india" />
-            <label htmlFor="india">India</label>
-          </div>
         </div>
         <div className="filtered__result">
           <div>
