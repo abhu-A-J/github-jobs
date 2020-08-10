@@ -1,4 +1,5 @@
 import React from "react";
+import { withRouter } from "react-router-dom";
 
 import { numOfDays } from "../../utils/date";
 
@@ -7,8 +8,9 @@ import clock from "../../asset/iconmonstr-time-3.svg";
 
 import "./job-preview.styles.scss";
 
-const JobPreview = ({ jobDetails }) => {
+const JobPreview = ({ jobDetails, history }) => {
   const {
+    id,
     company,
     company_logo,
     createdAt,
@@ -18,7 +20,10 @@ const JobPreview = ({ jobDetails }) => {
   } = jobDetails;
 
   return (
-    <div className="preview__card">
+    <div
+      className="preview__card"
+      onClick={() => history.push(`/details/${id}`)}
+    >
       <div className="left-group">
         <div className="company-logo">
           <img src={company_logo} alt="Company Logo" />
@@ -45,4 +50,4 @@ const JobPreview = ({ jobDetails }) => {
   );
 };
 
-export default JobPreview;
+export default withRouter(JobPreview);
