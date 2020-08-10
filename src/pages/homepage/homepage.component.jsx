@@ -36,7 +36,7 @@ const HomePage = () => {
 
           <p className="location-tag">Location</p>
 
-          <LocationSearchBox />
+          <LocationSearchBox setParams={setParams} />
 
           <div className="input__group input__group--top">
             <input type="checkbox" id="london" />

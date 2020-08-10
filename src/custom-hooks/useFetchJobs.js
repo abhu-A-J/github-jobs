@@ -11,6 +11,7 @@ const useFetchJobs = (params) => {
   useEffect(() => {
     console.log("Fired!");
     const cancelToken = axios.CancelToken.source();
+    setFetchingState(true);
     axios
       .get(`https://cors-anywhere.herokuapp.com/${BASE_URL}.json`, {
         cancelToken: cancelToken.token,
