@@ -6,6 +6,7 @@ import "./App.scss";
 import Navbar from "./components/navbar/navbar.component";
 import HomePage from "./pages/homepage/homepage.component";
 import JobsPage from "./pages/job-page/job-page.component";
+import Footer from "./components/footer/footer.component";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Route path="/" exact component={HomePage} />
         <Route path="/details/:id" exact component={JobsPage} />
       </Switch>
+      <Footer />
     </>
   );
 }

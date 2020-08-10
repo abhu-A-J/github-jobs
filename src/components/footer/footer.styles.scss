@@ -1,0 +1,32 @@
+@import "../../sass/main";
+
+footer {
+  background: $black;
+  padding-top: 4rem;
+  padding-bottom: 2rem;
+  margin-top: 8rem;
+}
+
+.footer {
+  text-align: center;
+  span {
+    margin: 0rem 1rem;
+  }
+  &__line {
+    color: coral;
+    font-size: 1.8rem;
+  }
+  &__credits {
+    font-size: 1.4rem;
+    margin: 2rem 0rem;
+    color: $white;
+  }
+}
+
+.link {
+  text-decoration: none;
+  color: lightseagreen;
+  &:hover {
+    color: cyan;
+  }
+}
