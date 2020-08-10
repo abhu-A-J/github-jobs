@@ -21,6 +21,7 @@ const HomePage = () => {
   const [isFetching, jobs, error] = useFetchJobs(params);
 
   console.log("The state are", { isFetching, jobs, error });
+  console.log("Params are", params);
 
   return (
     <>
