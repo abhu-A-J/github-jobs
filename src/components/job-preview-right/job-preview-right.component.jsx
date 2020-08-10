@@ -1,6 +1,7 @@
 import React from "react";
 import parser from "html-react-parser";
-import moment from "moment";
+
+import { numOfDays } from "../../utils/date";
 
 import globe from "../../asset/iconmonstr-globe-6.svg";
 import clock from "../../asset/iconmonstr-time-3.svg";
@@ -18,11 +19,6 @@ const JobPreviewRight = (props) => {
     created_at,
   } = props;
 
-  // calculating number of days passed!
-  const start = moment.utc(created_at);
-  const end = moment(new Date());
-  const timePassed = end.to(start);
-
   return (
     <div className="details__large">
       <div className="main-heading">
@@ -31,7 +27,7 @@ const JobPreviewRight = (props) => {
       </div>
       <p className="info--small">
         <img src={clock} alt="Clock" />
-        <span>{timePassed}</span>
+        <span>{numOfDays(created_at)}</span>
       </p>
 
       <div className="company-details">
