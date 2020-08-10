@@ -24,6 +24,7 @@
 
 .left-group {
   display: flex;
+  flex: 60%;
   @media only screen and(max-width:375px) {
     flex-direction: column;
     justify-content: center;
@@ -40,8 +41,9 @@
   align-self: flex-end;
   display: flex;
   justify-content: space-evenly;
+  flex: 30%;
   @media only screen and(max-width:375px) {
-    width: 80%;
+    width: 90%;
     align-self: center;
   }
 

@@ -17,7 +17,7 @@ const Header = () => {
         <div className="input__container">
           <input
             type="text"
-            id="search"
+            id="desc"
             placeholder="Title, companies, expertise or benefits "
             autoComplete="off"
           />
